@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- font family add  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind config  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            BebasNeue: ["Bebas Neue"],
+            Roboto: ["Roboto"],
+          },
+          extend: {
+            colors: {
+              navLink: "#3C3C3C",
+              headerBg: "#FFFBF0",
+              headerText: "#FABE4C",
+              headerTextTwo: "#363958",
+              paragraphColor: "#3E3E3E",
+              btnColor: "#85A019",
+              btnColorTwo: "#A4BC46",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="bg-headerBg">
+      <!-- nav section  -->
+      <nav
+        class="container mx-auto flex justify-between pt-12 mb-8 items-center"
+      >
+        <div class="w-56 h-8">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <ul class="flex">
+          <li>
+            <a href="#" class="font-Roboto text-base font-medium text-navLink"
+              >Home</a
+            >
+          </li>
+          <li class="pl-8">
+            <a href="#" class="font-Roboto text-base font-medium text-navLink"
+              >Product</a
+            >
+          </li>
+          <li class="pl-8">
+            <a href="#" class="font-Roboto text-base font-medium text-navLink"
+              >About Us</a
+            >
+          </li>
+          <li class="pl-8">
+            <a href="#" class="font-Roboto text-base font-medium text-navLink"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- header section  -->
+      <section class="container mx-auto flex items-center justify-around pb-32">
+        <div>
+          <h1 class="text-8xl text-headerTextTwo font-BebasNeue">
+            <span class="text-headerText">Be the Penguins</span><br />
+            of Winter
+          </h1>
+          <p class="text-paragraphColor font-normal font-Roboto mb-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button
+            class="font-Roboto font-medium text-white bg-gradient-to-t from-btnColor to-btnColorTwo py-4 px-8 rounded-md"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="pl-48">
+          <img class="w-full" src="./images/model.png" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="my-12 container mx-auto">
+        <h2 class="font-BebasNeue text-5xl">WOMAN JACKET</h2>
+        <div class="grid grid-cols-3">
+          <div>
+            <div class="bg-gray-300">
+              <img class="w-60 mx-auto" src="./images/jacket-1.png" alt="" />
+            </div>
+            <div>
+              <h3 class="font-Roboto text-2xl font-bold">Yellow Coat Jacket</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div>
+                <h2>$234</h2>
+                <button
+                  class="font-Roboto font-medium text-white bg-gradient-to-t from-btnColor to-btnColorTwo py-4 px-8 rounded-md"
+                >
+                  BUY NOW
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
